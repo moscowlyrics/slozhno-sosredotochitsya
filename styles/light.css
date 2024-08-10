@@ -6,13 +6,13 @@
 
 :root .theme_light {
   --accent-color: #ff8dcb;
-  --main-title: #ffc2e6; 
+  --main-title: #ffc2e6;
   --text-color: #353430;
   --pseudo-color: rgba(255 255 255 / 0);
   --button-color: #353430;
   --button-outline: rgba(53 52 48 / 0.4);
   --link-color: #ff8dcb;
-  --decor-color: #353430; 
+  --decor-color: #353430;
   --title-color: #353430;
   --title-shadow: #ff0070;
   --bgk: #000028;
@@ -22,13 +22,13 @@
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
-    --main-title: #ffc2e6; 
+    --main-title: #ffc2e6;
     --text-color: #353430;
     --pseudo-color: rgba(255 255 255 / 0);
     --button-color: #353430;
     --button-outline: rgba(53 52 48 / 0.4);
     --link-color: #ff8dcb;
-    --decor-color: #353430; 
+    --decor-color: #353430;
     --title-color: #353430;
     --title-shadow: #ff0070;
     --bgk: #000028;
