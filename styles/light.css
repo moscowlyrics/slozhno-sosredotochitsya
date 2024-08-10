@@ -15,7 +15,7 @@
   --decor-color: #353430;
   --title-color: #353430;
   --title-shadow: #ff0070;
-  --bgk: #000028;
+  --bgk: #fff1f7;
   --bgi: url(../images/cover-image-light.png);
 }
 
@@ -31,7 +31,7 @@
     --decor-color: #353430;
     --title-color: #353430;
     --title-shadow: #ff0070;
-    --bgk: #000028;
+    --bgk: #fff1f7;
     --bgi: url(../images/cover-image-light.png);
   }
 }
