@@ -40,3 +40,10 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

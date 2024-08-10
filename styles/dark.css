@@ -5,8 +5,16 @@
 */
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #ff0070;
+  --main-title: #DB00FF;
+  --text-color: #F1B2CE;
+  --pseudo-color: #ff0070;
+  --button-color: #ff0070;
+  --button-outline: rgba(255 0 112 / 0.4);
+  --link-color: #ff0070;
+  --decor-color: #ff0070;
+  --title-color: #ff0070;
+  --title-shadow: #ff0070;
+  --bgk: #000028;
+  --bgi: url(../images/cover-image-dark.png);
 }
