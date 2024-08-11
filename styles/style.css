@@ -1,14 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-/* HEIGHT У HEADER И FOOTER  */
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   max-width: 1024px;
@@ -42,7 +33,7 @@
 }
 
 .page a:hover {
-  text-decoration: underline;
+  border-block-end: 1px solid var(--text-color);
 }
 
 .page a:focus-visible {
@@ -52,6 +43,7 @@
 .header {
   width: inherit;
   max-height: 768px;
+  min-height: 668px;
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -90,7 +82,7 @@
 .header__theme-menu-button {
   color: var(--button-color);
   padding: 0 13px;
-  height: 26px;
+  min-height: 26px;
   line-height: normal;
   display: flex;
   text-transform: lowercase;
@@ -163,9 +155,9 @@
   gap: 20px;
 }
 
-.main__upper-container {
+.same-designed {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr;
 }
 
 .main__container_title {
@@ -175,17 +167,16 @@
   max-width: 315px;
 }
 
-.main__upper-container_title {
+.section-multi_title {
   grid-column-start: 1/2;
 }
-
 
 .main__container_content {
   display: grid;
   gap: 20px;
 }
 
-.main__upper-container_content {
+.section-multi_content {
   grid-column: 2/span 2;
 }
 
@@ -205,23 +196,22 @@
   line-height: 23.4px;
 }
 
-.main__middle-container {
+.section-decrease {
   display: grid;
   grid-template-rows: repeat(2, fit-content);
 }
 
-.main__middle-container_content {
+.section-decrease_content {
   grid-row: 2/3;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.main__lower-container {
+.section-concentrate {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px 10px;
+  gap: 0px 10px;
 }
 
-.main__lower-container_content-area:not(:first-child) .container_content-title {
+.section-concentrate_content-area:not(:first-child) .container_content-title {
   font-weight: 400;
 }
 
@@ -277,6 +267,7 @@
   position: relative;
   display: flex;
   max-height: 768px;
+  min-height: 668px;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -292,7 +283,7 @@
 @media (width <= 768px) {
   .page {
     max-width: 768px;
-    gap: 60px;
+    gap: 61px;
   }
 
   .header {
@@ -329,16 +320,16 @@
     max-width: 236px;
   }
 
-  .main__middle-container {
+  .section-decrease {
     gap: 19px;
   }
 
-  .main__middle-container_content {
+  .section-decrease_content {
     display: flex;
     flex-direction: column;
   }
 
-  .main__lower-container {
+  .section-concentrate {
     gap: 20px;
   }
 
@@ -411,23 +402,23 @@
     max-width: 355px;
   }
 
-  .main__upper-container {
+  .section-multi {
     display: flex;
     flex-direction: column;
   } 
 
-  .main__middle-container {
+  .section-decrease {
     display: flex;
     flex-direction: column;
     gap: 19px;
   }
 
-  .main__middle-container_content {
+  .section-decrease_content {
     display: flex;
     flex-direction: column;
   }
 
-  .main__lower-container {
+  .section-concentrate {
     display: flex;
     flex-direction: column;
     gap: 20px;
