@@ -1,10 +1,10 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* У меня почему-то горизонтальная прокрутка не отображается, но вроде исправил */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   max-width: 1024px;
   display: flex;
   flex-direction: column;
+
   gap: 60px;
 
   background-image: var(--bgi);
@@ -42,7 +42,6 @@
 
 .header {
   width: inherit;
-  max-height: 768px;
   min-height: 668px;
   height: 100vh;
   display: grid;
@@ -133,7 +132,7 @@
   width: max(364px, 49.899vw);
   font-weight: 700;
   line-height: 23.4px;
-  color: #000028;
+  color: var(--area-title);
   background-color: var(--accent-color);
   margin-inline-end: 20px;
   margin-block-end: 20px;
@@ -188,7 +187,7 @@
 
 .container_content-title {
   font-size: inherit;
-  color: #000028;
+  color: var(--area-title);
   background-color: var(--accent-color);
 }
 
@@ -220,7 +219,7 @@
 }
 
 .main__image-container_title {
-  color: #000028;
+  color: var(--area-title);
   background-color: var(--accent-color);
   font-size: 18px;
   line-height: 23.4px;
@@ -266,7 +265,6 @@
 .footer {
   position: relative;
   display: flex;
-  max-height: 768px;
   min-height: 668px;
   height: 100vh;
   justify-content: center;
@@ -287,7 +285,6 @@
   }
 
   .header {
-    max-height: 1024px;
     align-items: center;
     padding: 0;
   } 
@@ -336,21 +333,15 @@
   .main__image-container {
     gap: 20px;
   }
-
-  .footer {
-    max-height: 1024px;
-  }
 }
 
-@media (width <= 375px) {
+@media (width <= 540px) {
   .page {
-    max-width: 375px;
-    width: 375px;
+    max-width: 540px;
     gap: 29px;
   }
 
   .header {
-    max-height: 668px;
     padding: 10px;
   } 
 
@@ -384,7 +375,8 @@
   }
 
   .header__text {
-    width: 355px;
+    max-width: 400px;
+    width: fit-content;
     margin-block-end: 0;
     margin-inline-end: 0;
   }
@@ -399,7 +391,7 @@
   }
 
   .main__container_title {
-    max-width: 355px;
+    max-width: fit-content;
   }
 
   .section-multi {
@@ -434,11 +426,21 @@
     gap: 10px;
   }
 
-  .footer {
-    max-height: 668px;
-  }
-
   .footer__title {
     font-size: clamp(0rem, 0rem + 30.9333vw, 7.25rem);
+  }
+}
+
+@media (width <= 375px) {
+  .page {
+    max-width: 375px;
+  }
+
+  .header__text {
+    max-width: 355px;
+  }
+
+  .main__container_title {
+    max-width: 355px;
   }
 }
